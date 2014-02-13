@@ -1,15 +1,12 @@
 ---
 layout: default
-title: ZZZ
+title: Index
 ---
 
-<h2>{{ page.title }}</h2>
-<ul>
-	{% for post in site.posts %}
-	<h3>{{ post.title }}</h3>
+{% for post in site.posts %}
+	<h2>{{ post.title }}</h2>
 	<p>{{ post.date | date_to_string }}</p>
 	{{ post.content | split:'<!--more-->' |first }}
-	<p><a href="{{ site.baseurl }}/{{ post.url }}">... ...</a></p>
+	<p><a href="{{ site.baseurl }}{{ post.url }}">... ...</a></p>
 	<hr/>
-	{% endfor %}
-</ul>
+{% endfor %}
