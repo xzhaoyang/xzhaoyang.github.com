@@ -7,6 +7,6 @@ title: ZZZ
 	<h3>{{ post.title }}</h3>
 	{{ post.content | split:'<!--more-->' |first }}
 	<p>{{ post.date | date_to_string }}
-	<a href="{{ site.baseurl }}{{ post.url }}">... ...</a></p>
+	<a href="{{ site.baseurl }}{{ post.url }}">{{ site.baseurl }}... ...</a></p>
 	<hr/>
 {% endfor %}
