@@ -18,7 +18,8 @@ body {
 }
 
 .wrapper {
-  margin: 0 auto;
+  width: 640px;
+  margin: auto;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
