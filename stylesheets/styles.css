@@ -20,11 +20,6 @@ body {
 .wrapper {
   width: 640px;
   margin: 15px auto;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
@@ -59,7 +54,6 @@ header {
   background: linear-gradient(#ddfbfc, #c6eafa);
   position: relative;
   padding: 15px 20px;
-  border-bottom: 1px solid #B2D2E1;
   text-align: center;
 }
 header h1 {
