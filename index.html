@@ -4,7 +4,7 @@ title: ZZZ
 ---
 
 {% for post in site.posts %}
-<section>
+<section class="wrapper">
 	<h3>{{ post.title }}</h3>
 	{{ post.content | split:'<!--more-->' |first }}
 	<p>{{ post.date | date_to_string }}
