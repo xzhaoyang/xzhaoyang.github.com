@@ -19,7 +19,7 @@ body {
 
 .wrapper {
   width: 640px;
-  margin: auto;
+  margin: 15px auto;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -94,7 +94,6 @@ header p.view small {
 
 section {
   padding: 15px 20px;
-  margin-top: 15px;
   font-size: 15px;
   background: -webkit-gradient(linear, 50% 0%, 50% 700, color-stop(0%, #fafafa), color-stop(100%, #dedede));
   background: -webkit-linear-gradient(#fafafa, #dedede 700px);
