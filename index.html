@@ -20,7 +20,11 @@ title: ZZZ
 <!-- Pagination links -->
 <div class="pagination">
 	{% if paginator.previous_page %}
-	<a href="/page{{ paginator.previous_page }}" class="previous">新</a>
+		{% if paginator.previous_page == 1 %}
+		<a href="/index.html" class="previous">新</a>
+		{% else %}
+		<a href="/page{{ paginator.previous_page }}" class="previous">新</a>
+		{% endif %}
 	{% else %}
 	<span class="previous">新</span>
 	{% endif %}
