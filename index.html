@@ -5,7 +5,9 @@ title: ZZZ
 
 {% for post in paginator.posts %}
 <section class="wrapper">
+	{% if post.title != "X" %}
 	<h3>{{ post.title }}</h3>
+	{% endif %}
 	{{ post.content | split:'<!--more-->' |first }}
 	<p>{{ post.date | date_to_string }}
 	<a href="{{ post.url }}">... ...</a></p>
