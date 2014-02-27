@@ -3,5 +3,5 @@ baseurl: /
 
 timezone: Asia/Chongqing
 
-paginate: 10
+paginate: 2
 paginate_path: "/page:num"
