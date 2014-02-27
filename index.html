@@ -17,3 +17,18 @@ title: ZZZ
 </div>
 {% endfor %}
 
+<!-- Pagination links -->
+<div class="pagination">
+	{% if paginator.previous_page %}
+	<a href="/page{{ paginator.previous_page }}" class="previous">新</a>
+	{% else %}
+	<span class="previous">新</span>
+	{% endif %}
+	<span class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+	{% if paginator.next_page %}
+	<a href="/page{{ paginator.next_page }}" class="next">旧</a>
+	{% else %}
+	<span class="next">旧</span>
+	{% endif %}
+</div>
+
