@@ -25,9 +25,10 @@
 	  {% endif %}
 
 	  {{ content }}
-	  <hr/>
-	  {{ page.date | date_to_string }}
       </section>
+	  <div class = "date">
+		  {{ page.date | date_to_string }}
+	  </div>
     </div>
     <footer>
       <p>By xzhaoyang</p>
