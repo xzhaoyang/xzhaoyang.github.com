@@ -99,7 +99,7 @@ section {
 }
 .date {
   padding: 5px 20px;
-  border-top: 1px solid #bbb;
+  border-top: 1px solid #aaaaaa;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ddfbfc), color-stop(100%, #c6eafa));
   background: -webkit-linear-gradient(#ddfbfc, #c6eafa);
   background: -moz-linear-gradient(#ddfbfc, #c6eafa);
