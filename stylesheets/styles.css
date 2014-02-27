@@ -87,7 +87,6 @@ header p.view small {
 }
 
 section {
-  padding: 15px 20px;
   font-size: 15px;
   background: -webkit-gradient(linear, 50% 0%, 50% 700, color-stop(0%, #fafafa), color-stop(100%, #dedede));
   background: -webkit-linear-gradient(#fafafa, #dedede 700px);
@@ -98,10 +97,12 @@ section {
   position: relative;
 }
 .content {
+  margin:0;
   padding: 15px 20px;
   width: 100%;
 }
 .date {
+  margin:0;
   padding: 15px 20px;
   border-top: 1px solid #555;
   width: 100%;
