@@ -20,11 +20,13 @@
 	  <h1><a href="/">ZZZ</a></h1>
       </header>
 	  <section>
-	  {% if post.title != "X" %}
+	  {% if page.title != "扯" %}
 	  <h3>{{ page.title }}</h3>
 	  {% endif %}
 
 	  {{ content }}
+	  <hr/>
+	  {{ post.date | date_to_string }}
       </section>
     </div>
     <footer>
