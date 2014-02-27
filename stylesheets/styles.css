@@ -45,7 +45,9 @@ strong {
 }
 
 header {
+  background: #C6EAFA;
   position: relative;
+  padding: 15px 0px;
   text-align: center;
 }
 header h1 {
