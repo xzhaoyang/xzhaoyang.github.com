@@ -45,13 +45,13 @@ strong {
 }
 
 header {
-  background: #C6EAFA;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ddfbfc), color-stop(100%, #c6eafa));
-  background: -webkit-linear-gradient(#ddfbfc, #c6eafa);
-  background: -moz-linear-gradient(#ddfbfc, #c6eafa);
-  background: -o-linear-gradient(#ddfbfc, #c6eafa);
-  background: -ms-linear-gradient(#ddfbfc, #c6eafa);
-  background: linear-gradient(#ddfbfc, #c6eafa);
+  background: #ff8000;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb522), color-stop(100%, #ff8000));
+  background: -webkit-linear-gradient(#ffb522, #ff8000);
+  background: -moz-linear-gradient(#ffb522, #ff8000);
+  background: -o-linear-gradient(#ffb522, #ff8000);
+  background: -ms-linear-gradient(#ffb522, #ff8000);
+  background: linear-gradient(#ffb522, #ff8000);
   position: relative;
   padding: 15px 0px;
   text-align: center;
