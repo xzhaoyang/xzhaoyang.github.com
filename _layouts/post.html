@@ -1,38 +1,30 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>我是这样想的 | {{ page.title }}</title>
-
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
-    <script src="/javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-	  <h1><a href="/">我是这样想的</a></h1>
-      </header>
-	  <section>
-	  {% if page.title != "扯" %}
-	  <h3>{{ page.title }}</h3>
-	  {% endif %}
-
-	  {{ content }}
-      </section>
-	  <div class = "date">
-		  {{ page.date | date_to_string }}
-	  </div>
-    </div>
-    <footer>
-      <p>By xzhaoyang</p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>我是这样想的 | {{ page.title }}</title>
+		<link rel="stylesheet" href="/stylesheets/styles.css">
+		<link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+	<body>
+		<header>
+			<h1><a href="/">我是这样想的</a></h1>
+		</header>
+		<article>
+			<header>
+				<h3>{{ page.title }}</h3>
+			</header>
+			<section>
+				{{ page.content }}
+			</section>
+			<footer>
+				{{ page.date | date_to_string }}
+			</footer>
+		</article>
+		<footer>
+			<p>By xzhaoyang</p>
+		</footer>
+	</body>
 </html>

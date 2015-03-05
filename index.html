@@ -4,35 +4,35 @@ title: ZZZ
 ---
 
 {% for post in paginator.posts %}
-<div class = "wrapper">
+<article>
+	<header>
+		<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+	</header>
 	<section>
-	{% if post.title != "扯" %}
-	<h3>{{ post.title }}</h3>
-	{% endif %}
-	{{ post.content | split:'<!--more-->' |first }}
+		{{ post.content | split:'<!--more-->' |first }}
 	</section>
-	<div class = "date">
-		<a href="{{ post.url }}">{{ post.date | date_to_string }}</a>
-	</div>
-</div>
+	<footer>
+		{{ post.date | date_to_string }}
+	</footer>
+</article>
 {% endfor %}
 
 <!-- Pagination links -->
 <div class="pagination">
 	{% if paginator.previous_page %}
 		{% if paginator.previous_page == 1 %}
-		<a href="/index.html" class="previous">新</a>
+		<a href="/index.html" class="previous">←</a>
 		{% else %}
-		<a href="/page{{ paginator.previous_page }}" class="previous">新</a>
+		<a href="/page{{ paginator.previous_page }}" class="previous">←</a>
 		{% endif %}
 	{% else %}
-	<span class="previous">新</span>
+	<span class="previous">←</span>
 	{% endif %}
 	<span class="page_number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
 	{% if paginator.next_page %}
-	<a href="/page{{ paginator.next_page }}" class="next">旧</a>
+	<a href="/page{{ paginator.next_page }}" class="next">→</a>
 	{% else %}
-	<span class="next">旧</span>
+	<span class="next">→</span>
 	{% endif %}
 </div>
 
