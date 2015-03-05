@@ -1,5 +1,6 @@
 ---
-published: true
+style: post
+title: Test
 ---
 
 ## A New Post
